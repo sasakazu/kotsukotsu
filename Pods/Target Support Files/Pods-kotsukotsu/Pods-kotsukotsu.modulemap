@@ -1,0 +1,6 @@
+framework module Pods_kotsukotsu {
+  umbrella header "Pods-kotsukotsu-umbrella.h"
+
+  export *
+  module * { export * }
+}

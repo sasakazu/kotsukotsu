@@ -1,0 +1,6 @@
+framework module Pods_kotsukotsuUITests {
+  umbrella header "Pods-kotsukotsuUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
