@@ -14,6 +14,7 @@
 		73B8A04B2304109B00C95FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B8A0492304109B00C95FF0 /* LaunchScreen.storyboard */; };
 		73B8A0562304109B00C95FF0 /* kotsukotsuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0552304109B00C95FF0 /* kotsukotsuTests.swift */; };
 		73B8A0612304109B00C95FF0 /* kotsukotsuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0602304109B00C95FF0 /* kotsukotsuUITests.swift */; };
+		73B8A06F230412B400C95FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */; };
 		B3D745F660A07B958079F118 /* Pods_kotsukotsuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9DE31B4A687CD066874C0B /* Pods_kotsukotsuUITests.framework */; };
 		C70C3BFA5739AFC0AF080F58 /* Pods_kotsukotsu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8F7D30A8164067A988BE98 /* Pods_kotsukotsu.framework */; };
 		DD7EAAE8F54AAC590F57CC3E /* Pods_kotsukotsuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C021AB7E302B240797CE52E /* Pods_kotsukotsuTests.framework */; };
@@ -52,6 +53,7 @@
 		73B8A05C2304109B00C95FF0 /* kotsukotsuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kotsukotsuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8A0602304109B00C95FF0 /* kotsukotsuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kotsukotsuUITests.swift; sourceTree = "<group>"; };
 		73B8A0622304109B00C95FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8334A046370363C1F43FED65 /* Pods-kotsukotsu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsu.release.xcconfig"; path = "Target Support Files/Pods-kotsukotsu/Pods-kotsukotsu.release.xcconfig"; sourceTree = "<group>"; };
 		A753F07E977C2A7244F43CD4 /* Pods-kotsukotsuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsuUITests.debug.xcconfig"; path = "Target Support Files/Pods-kotsukotsuUITests/Pods-kotsukotsuUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA8F7D30A8164067A988BE98 /* Pods_kotsukotsu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotsukotsu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				73B8A0422304109800C95FF0 /* ViewController.swift */,
 				73B8A0442304109800C95FF0 /* Main.storyboard */,
 				73B8A0472304109B00C95FF0 /* Assets.xcassets */,
+				73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */,
 				73B8A0492304109B00C95FF0 /* LaunchScreen.storyboard */,
 				73B8A04C2304109B00C95FF0 /* Info.plist */,
 			);
@@ -152,7 +155,6 @@
 				A753F07E977C2A7244F43CD4 /* Pods-kotsukotsuUITests.debug.xcconfig */,
 				BA2A44984CCA2ABFA91DE0B3 /* Pods-kotsukotsuUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,6 +279,7 @@
 				73B8A04B2304109B00C95FF0 /* LaunchScreen.storyboard in Resources */,
 				73B8A0482304109B00C95FF0 /* Assets.xcassets in Resources */,
 				73B8A0462304109800C95FF0 /* Main.storyboard in Resources */,
+				73B8A06F230412B400C95FF0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

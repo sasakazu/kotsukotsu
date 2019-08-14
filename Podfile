@@ -8,6 +8,7 @@ target 'kotsukotsu' do
   # Pods for kotsukotsu
   
   pod 'Firebase'
+  pod 'Firebase/Analytics'
 
   target 'kotsukotsuTests' do
     inherit! :search_paths
