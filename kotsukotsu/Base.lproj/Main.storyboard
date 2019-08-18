@@ -278,7 +278,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="P0B-B8-KAL" kind="relationship" relationship="viewControllers" id="mVu-7d-Zhj"/>
+                        <segue destination="vGV-fD-QAs" kind="relationship" relationship="viewControllers" id="mVu-7d-Zhj"/>
                         <segue destination="AyG-g7-biv" kind="relationship" relationship="viewControllers" id="e2M-le-W6y"/>
                         <segue destination="mwb-ce-VEl" kind="relationship" relationship="viewControllers" id="5Ir-Cp-YfX"/>
                         <segue destination="urc-ck-HPs" kind="relationship" relationship="viewControllers" id="yvR-Bf-dK1"/>
@@ -308,7 +308,7 @@
             </objects>
             <point key="canvasLocation" x="867" y="1538"/>
         </scene>
-        <!--カレンダー-->
+        <!--View Controller-->
         <scene sceneID="TpG-gQ-7Ej">
             <objects>
                 <viewController id="P0B-B8-KAL" sceneMemberID="viewController">
@@ -318,11 +318,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GrI-DZ-ljo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="カレンダー" id="ayb-v2-lA2"/>
+                    <navigationItem key="navigationItem" id="iMJ-bB-Jaz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D96-7f-dhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="-656"/>
+            <point key="canvasLocation" x="1754" y="-656"/>
         </scene>
         <!--毎日こつこつ-->
         <scene sceneID="16B-2P-N1F">
@@ -362,11 +362,12 @@
             </objects>
             <point key="canvasLocation" x="868" y="805"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--アカウント-->
         <scene sceneID="4Sa-M8-1fi">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHg-Zl-eqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hQK-2f-TvB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="gsV-Si-Srh"/>
+                    <tabBarItem key="tabBarItem" title="アカウント" id="gsV-Si-Srh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gYz-VQ-RBM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -377,9 +378,27 @@
                         <segue destination="MhX-kF-sai" kind="relationship" relationship="rootViewController" id="Spj-EJ-oYU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SHg-Zl-eqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867" y="2281"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="VRQ-wR-PfK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vGV-fD-QAs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="カレンダー" id="ayb-v2-lA2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PJi-fz-YBh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="P0B-B8-KAL" kind="relationship" relationship="rootViewController" id="LIe-og-3Gr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQi-uv-DaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="-656.25"/>
         </scene>
     </scenes>
 </document>
