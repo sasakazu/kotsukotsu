@@ -11,6 +11,9 @@ target 'kotsukotsu' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
 
+  pod 'FSCalendar'
+  pod 'CalculateCalendarLogic'
+  
   target 'kotsukotsuTests' do
     inherit! :search_paths
     # Pods for testing

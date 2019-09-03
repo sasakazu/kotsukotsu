@@ -10,60 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--今年こつこつ-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="goalViewController" customModule="kotsukotsu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-rz-Xpn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="u3W-qs-FYK">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u3W-qs-FYK" id="5BK-gm-6gR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="今年こつこつ" id="Y2O-ie-Co0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fjH-hb-6bA">
-                            <connections>
-                                <segue destination="ovh-Zs-0GG" kind="show" id="yZb-LI-Jay"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1754" y="1538"/>
-        </scene>
-        <!--Goal Add-->
-        <scene sceneID="aW0-ov-d0f">
-            <objects>
-                <viewController id="ovh-Zs-0GG" customClass="goalAdd" customModule="kotsukotsu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vDq-HP-B4C">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="NHY-Fy-xar"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7l2-gs-tTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2570" y="1538"/>
-        </scene>
         <!--毎日こつこつ-->
         <scene sceneID="Ybp-4x-8G9">
             <objects>
@@ -108,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7R-a8-Gp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="80"/>
+            <point key="canvasLocation" x="1754" y="825"/>
         </scene>
         <!--Everyday Add-->
         <scene sceneID="g7c-Gi-yJB">
@@ -118,34 +64,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-WC-QAK">
-                                <rect key="frame" x="20" y="199" width="374" height="269"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-WC-QAK">
+                                <rect key="frame" x="20" y="488" width="374" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毎日のこつこつ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODD-UV-0y1">
-                                <rect key="frame" x="20" y="133" width="374" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="理想形" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXq-tv-lv5">
-                                <rect key="frame" x="20" y="509" width="374" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目標" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXq-tv-lv5">
+                                <rect key="frame" x="20" y="127" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="体重50キロになる" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7d-du-stP">
-                                <rect key="frame" x="20" y="568" width="374" height="30"/>
+                                <rect key="frame" x="20" y="186" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こつこつ：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClG-aB-0MF">
+                                <rect key="frame" x="20" y="273" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="毎日５キロ走る" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-2t-Ncx">
+                                <rect key="frame" x="20" y="332" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="memo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODD-UV-0y1">
+                                <rect key="frame" x="20" y="433" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h6B-se-gtD"/>
@@ -160,48 +120,12 @@
                     <connections>
                         <outlet property="dayTF" destination="u7d-du-stP" id="3Yq-3e-vf7"/>
                         <outlet property="dayTextarea" destination="z6v-WC-QAK" id="omY-3G-I3v"/>
+                        <outlet property="kotukotuTF" destination="yvF-2t-Ncx" id="dTV-I8-j8X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVN-F5-u3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2569.5652173913045" y="79.6875"/>
-        </scene>
-        <!--毎月こつこつ-->
-        <scene sceneID="YMQ-5B-omf">
-            <objects>
-                <viewController id="vcW-0L-E8a" customClass="monthTable" customModule="kotsukotsu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d7K-yf-e6T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uOD-NF-8hE"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="毎月こつこつ" id="F19-f9-kIG">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fFC-R9-KQT">
-                            <connections>
-                                <segue destination="ZNF-hO-WTS" kind="show" id="x3w-1f-7Zz"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2iY-rI-bgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1755" y="805"/>
-        </scene>
-        <!--Month Add-->
-        <scene sceneID="L6F-Td-A2q">
-            <objects>
-                <viewController id="ZNF-hO-WTS" customClass="monthAdd" customModule="kotsukotsu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TaD-Sg-1AA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Utb-Aq-Zpr"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3kM-cn-sPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2572" y="805"/>
+            <point key="canvasLocation" x="2569.5652173913045" y="825"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j3J-di-mll">
@@ -217,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8n-wb-2fk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="2280"/>
+            <point key="canvasLocation" x="1754" y="1631"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7MF-ad-sI9">
@@ -280,8 +204,6 @@
                     <connections>
                         <segue destination="vGV-fD-QAs" kind="relationship" relationship="viewControllers" id="mVu-7d-Zhj"/>
                         <segue destination="AyG-g7-biv" kind="relationship" relationship="viewControllers" id="e2M-le-W6y"/>
-                        <segue destination="mwb-ce-VEl" kind="relationship" relationship="viewControllers" id="5Ir-Cp-YfX"/>
-                        <segue destination="urc-ck-HPs" kind="relationship" relationship="viewControllers" id="yvR-Bf-dK1"/>
                         <segue destination="hQK-2f-TvB" kind="relationship" relationship="viewControllers" id="13I-5c-Pp2"/>
                     </connections>
                 </tabBarController>
@@ -289,46 +211,40 @@
             </objects>
             <point key="canvasLocation" x="-326" y="805"/>
         </scene>
-        <!--今年こつこつ-->
-        <scene sceneID="OKw-e0-pmK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="urc-ck-HPs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="今年こつこつ" id="uZ5-Rl-ctn"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PpN-pQ-3f8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w1J-Dx-1BW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YAa-sk-4R5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="867" y="1538"/>
-        </scene>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="TpG-gQ-7Ej">
             <objects>
-                <viewController id="P0B-B8-KAL" sceneMemberID="viewController">
+                <viewController id="P0B-B8-KAL" customClass="calendarViewController" customModule="kotsukotsu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qoO-0g-loV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Muy-Nk-z3y" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年MM月"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GrI-DZ-ljo"/>
                     </view>
                     <navigationItem key="navigationItem" id="iMJ-bB-Jaz"/>
+                    <connections>
+                        <outlet property="calendarView" destination="Muy-Nk-z3y" id="xoo-yg-RUL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D96-7f-dhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="-656"/>
+            <point key="canvasLocation" x="1753.6231884057972" y="18.75"/>
         </scene>
-        <!--毎日こつこつ-->
+        <!--こつこつ-->
         <scene sceneID="16B-2P-N1F">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AyG-g7-biv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="毎日こつこつ" id="xe6-Lf-zuY"/>
+                    <tabBarItem key="tabBarItem" title="こつこつ" id="xe6-Lf-zuY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="byP-mi-SLI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -341,31 +257,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghx-01-znZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="80"/>
-        </scene>
-        <!--毎月こつこつ-->
-        <scene sceneID="6tR-2I-Diq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mwb-ce-VEl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="毎月こつこつ" id="CFK-2E-ni7"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O3x-CH-EWI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vcW-0L-E8a" kind="relationship" relationship="rootViewController" id="l3I-kH-kZ4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ilv-AJ-sDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="868" y="805"/>
+            <point key="canvasLocation" x="867" y="825"/>
         </scene>
         <!--アカウント-->
         <scene sceneID="4Sa-M8-1fi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SHg-Zl-eqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hQK-2f-TvB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="アカウント" id="gsV-Si-Srh"/>
                     <toolbarItems/>
@@ -378,8 +274,9 @@
                         <segue destination="MhX-kF-sai" kind="relationship" relationship="rootViewController" id="Spj-EJ-oYU"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHg-Zl-eqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="2281"/>
+            <point key="canvasLocation" x="867" y="1632"/>
         </scene>
         <!--カレンダー-->
         <scene sceneID="VRQ-wR-PfK">
@@ -398,7 +295,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQi-uv-DaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.66666666666674" y="-656.25"/>
+            <point key="canvasLocation" x="867" y="19"/>
         </scene>
     </scenes>
 </document>

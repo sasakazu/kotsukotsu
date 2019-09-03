@@ -12,10 +12,18 @@ import Firebase
 class everydayAdd: UIViewController {
     
     
-    @IBOutlet weak var dayTextarea: UITextView!
+
+
     @IBOutlet weak var dayTF: UITextField!
     
+    @IBOutlet weak var kotukotuTF: UITextField!
+    
 
+    @IBOutlet weak var dayTextarea: UITextView!
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,10 +34,15 @@ class everydayAdd: UIViewController {
         
         let db = Firestore.firestore()
         
-        db.collection("day").document().setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
+        let goal = dayTF.text
+        let kotukotu = kotukotuTF.text
+        let memo = dayTextarea.text
+        
+        db.collection("こつこつ").document().setData([
+            "目標": goal,
+            "すること": kotukotu,
+            "メモ": memo
+            
         ]) { err in
             if let err = err {
                 print("Error writing document: \(err)")
@@ -37,6 +50,9 @@ class everydayAdd: UIViewController {
                 print("Document successfully written!")
             }
         }
+        
+        self.navigationController?.popToRootViewController(animated: true)
+        
         
         
     }

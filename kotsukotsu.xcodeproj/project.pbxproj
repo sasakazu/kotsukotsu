@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731B42F6231E602E002AD961 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42F5231E602E002AD961 /* object.swift */; };
+		731B42F8231E6A1C002AD961 /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42F7231E6A1C002AD961 /* calendarViewController.swift */; };
 		73B8A0412304109800C95FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0402304109800C95FF0 /* AppDelegate.swift */; };
 		73B8A0432304109800C95FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0422304109800C95FF0 /* ViewController.swift */; };
 		73B8A0462304109800C95FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B8A0442304109800C95FF0 /* Main.storyboard */; };
@@ -15,12 +17,8 @@
 		73B8A0562304109B00C95FF0 /* kotsukotsuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0552304109B00C95FF0 /* kotsukotsuTests.swift */; };
 		73B8A0612304109B00C95FF0 /* kotsukotsuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0602304109B00C95FF0 /* kotsukotsuUITests.swift */; };
 		73B8A06F230412B400C95FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */; };
-		73B8A0B02308CDC500C95FF0 /* goalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0AF2308CDC500C95FF0 /* goalViewController.swift */; };
-		73B8A0B22308CE2100C95FF0 /* goalAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0B12308CE2100C95FF0 /* goalAdd.swift */; };
 		73B8A0B42308CE9A00C95FF0 /* everydayAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0B32308CE9A00C95FF0 /* everydayAdd.swift */; };
 		73B8A0B62308D07700C95FF0 /* everydayTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0B52308D07600C95FF0 /* everydayTable.swift */; };
-		73B8A0B82308D25500C95FF0 /* monthTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0B72308D25500C95FF0 /* monthTable.swift */; };
-		73B8A0BA2308D28D00C95FF0 /* monthAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0B92308D28D00C95FF0 /* monthAdd.swift */; };
 		73B8A0BD2309413F00C95FF0 /* dayCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0BC2309413F00C95FF0 /* dayCellTableViewCell.swift */; };
 		B3D745F660A07B958079F118 /* Pods_kotsukotsuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9DE31B4A687CD066874C0B /* Pods_kotsukotsuUITests.framework */; };
 		C70C3BFA5739AFC0AF080F58 /* Pods_kotsukotsu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8F7D30A8164067A988BE98 /* Pods_kotsukotsu.framework */; };
@@ -47,6 +45,8 @@
 /* Begin PBXFileReference section */
 		0C021AB7E302B240797CE52E /* Pods_kotsukotsuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kotsukotsuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660D0623DD2F720BD681BD59 /* Pods-kotsukotsu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsu.debug.xcconfig"; path = "Target Support Files/Pods-kotsukotsu/Pods-kotsukotsu.debug.xcconfig"; sourceTree = "<group>"; };
+		731B42F5231E602E002AD961 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
+		731B42F7231E6A1C002AD961 /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
 		73B8A03D2304109800C95FF0 /* kotsukotsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotsukotsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8A0402304109800C95FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B8A0422304109800C95FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,12 +61,8 @@
 		73B8A0602304109B00C95FF0 /* kotsukotsuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kotsukotsuUITests.swift; sourceTree = "<group>"; };
 		73B8A0622304109B00C95FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		73B8A0AF2308CDC500C95FF0 /* goalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalViewController.swift; sourceTree = "<group>"; };
-		73B8A0B12308CE2100C95FF0 /* goalAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalAdd.swift; sourceTree = "<group>"; };
 		73B8A0B32308CE9A00C95FF0 /* everydayAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = everydayAdd.swift; sourceTree = "<group>"; };
 		73B8A0B52308D07600C95FF0 /* everydayTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = everydayTable.swift; sourceTree = "<group>"; };
-		73B8A0B72308D25500C95FF0 /* monthTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monthTable.swift; sourceTree = "<group>"; };
-		73B8A0B92308D28D00C95FF0 /* monthAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monthAdd.swift; sourceTree = "<group>"; };
 		73B8A0BC2309413F00C95FF0 /* dayCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayCellTableViewCell.swift; sourceTree = "<group>"; };
 		8334A046370363C1F43FED65 /* Pods-kotsukotsu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsu.release.xcconfig"; path = "Target Support Files/Pods-kotsukotsu/Pods-kotsukotsu.release.xcconfig"; sourceTree = "<group>"; };
 		A753F07E977C2A7244F43CD4 /* Pods-kotsukotsuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsuUITests.debug.xcconfig"; path = "Target Support Files/Pods-kotsukotsuUITests/Pods-kotsukotsuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		731B42F4231E5FEF002AD961 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				731B42F5231E602E002AD961 /* object.swift */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
 		73B8A0342304109700C95FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -130,13 +134,13 @@
 		73B8A03F2304109800C95FF0 /* kotsukotsu */ = {
 			isa = PBXGroup;
 			children = (
-				73B8A0AE2308CD9600C95FF0 /* goal */,
-				73B8A0AD2308CD7800C95FF0 /* everymonth */,
+				731B42F4231E5FEF002AD961 /* object */,
 				73B8A0AC2308CD6900C95FF0 /* everyday */,
 				73B8A0BB2308D2D600C95FF0 /* more */,
 				73B8A0402304109800C95FF0 /* AppDelegate.swift */,
 				73B8A0422304109800C95FF0 /* ViewController.swift */,
 				73B8A0442304109800C95FF0 /* Main.storyboard */,
+				731B42F7231E6A1C002AD961 /* calendarViewController.swift */,
 				73B8A0472304109B00C95FF0 /* Assets.xcassets */,
 				73B8A06E230412B400C95FF0 /* GoogleService-Info.plist */,
 				73B8A0492304109B00C95FF0 /* LaunchScreen.storyboard */,
@@ -171,24 +175,6 @@
 				73B8A0B32308CE9A00C95FF0 /* everydayAdd.swift */,
 			);
 			path = everyday;
-			sourceTree = "<group>";
-		};
-		73B8A0AD2308CD7800C95FF0 /* everymonth */ = {
-			isa = PBXGroup;
-			children = (
-				73B8A0B72308D25500C95FF0 /* monthTable.swift */,
-				73B8A0B92308D28D00C95FF0 /* monthAdd.swift */,
-			);
-			path = everymonth;
-			sourceTree = "<group>";
-		};
-		73B8A0AE2308CD9600C95FF0 /* goal */ = {
-			isa = PBXGroup;
-			children = (
-				73B8A0AF2308CDC500C95FF0 /* goalViewController.swift */,
-				73B8A0B12308CE2100C95FF0 /* goalAdd.swift */,
-			);
-			path = goal;
 			sourceTree = "<group>";
 		};
 		73B8A0BB2308D2D600C95FF0 /* more */ = {
@@ -429,6 +415,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-kotsukotsu/Pods-kotsukotsu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -441,6 +429,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -460,15 +450,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B8A0BA2308D28D00C95FF0 /* monthAdd.swift in Sources */,
-				73B8A0B22308CE2100C95FF0 /* goalAdd.swift in Sources */,
 				73B8A0432304109800C95FF0 /* ViewController.swift in Sources */,
 				73B8A0B42308CE9A00C95FF0 /* everydayAdd.swift in Sources */,
-				73B8A0B82308D25500C95FF0 /* monthTable.swift in Sources */,
+				731B42F6231E602E002AD961 /* object.swift in Sources */,
 				73B8A0B62308D07700C95FF0 /* everydayTable.swift in Sources */,
+				731B42F8231E6A1C002AD961 /* calendarViewController.swift in Sources */,
 				73B8A0BD2309413F00C95FF0 /* dayCellTableViewCell.swift in Sources */,
 				73B8A0412304109800C95FF0 /* AppDelegate.swift in Sources */,
-				73B8A0B02308CDC500C95FF0 /* goalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
