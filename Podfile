@@ -10,7 +10,7 @@ target 'kotsukotsu' do
   pod 'Firebase'
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
-
+  pod 'Firebase/Auth'
   pod 'FSCalendar'
   pod 'CalculateCalendarLogic'
   

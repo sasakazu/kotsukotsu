@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		731B42F6231E602E002AD961 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42F5231E602E002AD961 /* object.swift */; };
 		731B42F8231E6A1C002AD961 /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42F7231E6A1C002AD961 /* calendarViewController.swift */; };
+		731B42FB231FC17A002AD961 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42FA231FC17A002AD961 /* login.swift */; };
+		731B42FD231FC197002AD961 /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B42FC231FC197002AD961 /* signUp.swift */; };
 		73B8A0412304109800C95FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0402304109800C95FF0 /* AppDelegate.swift */; };
 		73B8A0432304109800C95FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B8A0422304109800C95FF0 /* ViewController.swift */; };
 		73B8A0462304109800C95FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B8A0442304109800C95FF0 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		660D0623DD2F720BD681BD59 /* Pods-kotsukotsu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kotsukotsu.debug.xcconfig"; path = "Target Support Files/Pods-kotsukotsu/Pods-kotsukotsu.debug.xcconfig"; sourceTree = "<group>"; };
 		731B42F5231E602E002AD961 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
 		731B42F7231E6A1C002AD961 /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
+		731B42FA231FC17A002AD961 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		731B42FC231FC197002AD961 /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		73B8A03D2304109800C95FF0 /* kotsukotsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kotsukotsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B8A0402304109800C95FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B8A0422304109800C95FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 			path = object;
 			sourceTree = "<group>";
 		};
+		731B42F9231FC159002AD961 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				731B42FA231FC17A002AD961 /* login.swift */,
+				731B42FC231FC197002AD961 /* signUp.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		73B8A0342304109700C95FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 		73B8A03F2304109800C95FF0 /* kotsukotsu */ = {
 			isa = PBXGroup;
 			children = (
+				731B42F9231FC159002AD961 /* login */,
 				731B42F4231E5FEF002AD961 /* object */,
 				73B8A0AC2308CD6900C95FF0 /* everyday */,
 				73B8A0BB2308D2D600C95FF0 /* more */,
@@ -417,6 +431,7 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -431,6 +446,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -452,11 +468,13 @@
 			files = (
 				73B8A0432304109800C95FF0 /* ViewController.swift in Sources */,
 				73B8A0B42308CE9A00C95FF0 /* everydayAdd.swift in Sources */,
+				731B42FD231FC197002AD961 /* signUp.swift in Sources */,
 				731B42F6231E602E002AD961 /* object.swift in Sources */,
 				73B8A0B62308D07700C95FF0 /* everydayTable.swift in Sources */,
 				731B42F8231E6A1C002AD961 /* calendarViewController.swift in Sources */,
 				73B8A0BD2309413F00C95FF0 /* dayCellTableViewCell.swift in Sources */,
 				73B8A0412304109800C95FF0 /* AppDelegate.swift in Sources */,
+				731B42FB231FC17A002AD961 /* login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

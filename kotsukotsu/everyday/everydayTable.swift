@@ -19,6 +19,14 @@ class everydayTable: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let user = Auth.auth().currentUser {
+
+            let email = user.email
+          
+            print(email)
+            
+        }
 
     }
     
