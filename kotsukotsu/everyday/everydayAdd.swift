@@ -37,11 +37,13 @@ class everydayAdd: UIViewController {
         let goal = dayTF.text
         let kotukotu = kotukotuTF.text
         let memo = dayTextarea.text
+        let postid = NSUUID().uuidString
         
         db.collection("こつこつ").document().setData([
             "目標": goal,
             "すること": kotukotu,
-            "メモ": memo
+            "メモ": memo,
+            "postid": postid
             
         ]) { err in
             if let err = err {

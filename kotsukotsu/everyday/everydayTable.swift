@@ -11,7 +11,7 @@ import Firebase
 
 class everydayTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let day = ["hhhh"]
+    var itemSource = [Item]()
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -20,20 +20,65 @@ class everydayTable: UIViewController, UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let user = Auth.auth().currentUser {
+    
+        let db = Firestore.firestore()
+        
+        let user = Auth.auth().currentUser
+       
+        let myPostRef = db.collection("こつこつ")
+        
+        myPostRef.addSnapshotListener(includeMetadataChanges: true){ (postdocument, error) in
+            
+            
+            
+            guard let value = postdocument else {
+                print("snapShot is nil")
+                return
+            }
+            
+            
+            value.documentChanges.forEach{ postdiff in
+                
+                if postdiff.type == .added {
+                    
+                    
+                    
+                    let chatDataOp = postdiff.document.data() as? Dictionary<String, Any>
+                    
+                    
+                    guard let chatData = chatDataOp else {
+                        return
+                    }
+                    
+                    
+                    let username = chatData["すること"] as? String
+                    let iconURL = chatData["メモ"] as? String
+                    let profile = chatData["目標"] as? String
+                    let postid = chatData["postid"] as? String
+                    
+                    
+            
+                    
+                    let newSourse = Item(goal: username ?? "", title: iconURL ?? "", memo: profile ?? "", postid: postid ?? "")
+                    
+                    self.itemSource.append(newSourse)
+                    
+                    self.tableview.reloadData()
+                    
 
-            let email = user.email
-          
-            print(email)
+                }
+                
+            }
             
         }
-
+        
+        
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return day.count
+        return itemSource.count
         
     }
     
@@ -41,7 +86,7 @@ class everydayTable: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel!.text = day[indexPath.row]
+        cell.textLabel!.text = itemSource[indexPath.row].goal
   
         return cell
 
